@@ -1,3 +1,6 @@
+// podot - copyright (c) 2026 kaiklund incorporated. managed and founded by kai eklund-doe.
+// free software under the gnu general public license v3 or later, see LICENSE. no warranty.
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -217,6 +220,8 @@ public class App : Form
             h.Append("<tr><td>password</td><td><input id=p size=30> <button type=button onclick=\"p.value=window.external.DoGenerate()\">generate</button></td></tr>");
             h.Append("</table><input type=submit value=add></form>");
         }
+        h.Append("<br><hr><center><font size=1 color=gray>copyright &copy; 2026 kaiklund incorporated. managed and founded by kai eklund-doe.<br>");
+        h.Append("free software, licensed under the gnu general public license v3. provided without any warranty.</font></center>");
         h.Append("</body></html>");
         web.DocumentText = h.ToString();
     }
